@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'AvenirNextCyr-ThinItalic';
+    src: url('AvenirNextCyr-ThinItalic.woff2') format('woff2'),
+        url('AvenirNextCyr-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-BoldItalic';
+    src: url('AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+        url('AvenirNextCyr-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Regular';
+    src: url('AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('AvenirNextCyr-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Heavy';
+    src: url('AvenirNextCyr-Heavy.woff2') format('woff2'),
+        url('AvenirNextCyr-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Medium';
+    src: url('AvenirNextCyr-Medium.woff2') format('woff2'),
+        url('AvenirNextCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-LightItalic';
+    src: url('AvenirNextCyr-LightItalic.woff2') format('woff2'),
+        url('AvenirNextCyr-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-HeavyItalic';
+    src: url('AvenirNextCyr-HeavyItalic.woff2') format('woff2'),
+        url('AvenirNextCyr-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Thin';
+    src: url('AvenirNextCyr-Thin.woff2') format('woff2'),
+        url('AvenirNextCyr-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-MediumItalic';
+    src: url('AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+        url('AvenirNextCyr-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-UltraLightIt';
+    src: url('AvenirNextCyr-UltraLightIt.woff2') format('woff2'),
+        url('AvenirNextCyr-UltraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-UltraLight';
+    src: url('AvenirNextCyr-UltraLight.woff2') format('woff2'),
+        url('AvenirNextCyr-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Demi';
+    src: url('AvenirNextCyr-Demi.woff2') format('woff2'),
+        url('AvenirNextCyr-Demi.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Bold';
+    src: url('AvenirNextCyr-Bold.woff2') format('woff2'),
+        url('AvenirNextCyr-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Italic';
+    src: url('AvenirNextCyr-Italic.woff2') format('woff2'),
+        url('AvenirNextCyr-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-DemiItalic';
+    src: url('AvenirNextCyr-DemiItalic.woff2') format('woff2'),
+        url('AvenirNextCyr-DemiItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr-Light';
+    src: url('AvenirNextCyr-Light.woff2') format('woff2'),
+        url('AvenirNextCyr-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-DFillRegular';
+    src: url('PantonIcons-DFillRegular.woff2') format('woff2'),
+        url('PantonIcons-DFillRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-CFillRegular';
+    src: url('PantonIcons-CFillRegular.woff2') format('woff2'),
+        url('PantonIcons-CFillRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-LightItalic';
+    src: url('Panton-LightItalic.woff2') format('woff2'),
+        url('Panton-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PantonIcons-BFillLight';
+    src: url('PantonIcons-BFillLight.woff2') format('woff2'),
+        url('PantonIcons-BFillLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-Heavy';
+    src: url('Panton-Heavy.woff2') format('woff2'),
+        url('Panton-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-AFillRegula';
+    src: url('PantonIcons-AFillRegular.woff2') format('woff2'),
+        url('PantonIcons-AFillRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-CFillLight';
+    src: url('PantonIcons-CFillLight.woff2') format('woff2'),
+        url('PantonIcons-CFillLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-DFillLight';
+    src: url('PantonIcons-DFillLight.woff2') format('woff2'),
+        url('PantonIcons-DFillLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-CLight';
+    src: url('PantonIcons-CLight.woff2') format('woff2'),
+        url('PantonIcons-CLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-BFillRegular';
+    src: url('PantonIcons-BFillRegular.woff2') format('woff2'),
+        url('PantonIcons-BFillRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-SemiBoldItalic';
+    src: url('Panton-SemiBoldItalic.woff2') format('woff2'),
+        url('Panton-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PantonIcons-CRegular';
+    src: url('PantonIcons-CRegular.woff2') format('woff2'),
+        url('PantonIcons-CRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-BoldItalic';
+    src: url('Panton-BoldItalic.woff2') format('woff2'),
+        url('Panton-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PantonIcons-DRegular';
+    src: url('PantonIcons-DRegular.woff2') format('woff2'),
+        url('PantonIcons-DRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-DLight';
+    src: url('PantonIcons-DLight.woff2') format('woff2'),
+        url('PantonIcons-DLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-ExtraLightItalic';
+    src: url('Panton-ExtraLightItalic.woff2') format('woff2'),
+        url('Panton-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton-BlackItalic';
+    src: url('Panton-BlackItalic.woff2') format('woff2'),
+        url('Panton-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton-RegularItalic';
+    src: url('Panton-RegularItalic.woff2') format('woff2'),
+        url('Panton-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PantonIcons-ARegular';
+    src: url('PantonIcons-ARegular.woff2') format('woff2'),
+        url('PantonIcons-ARegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-ExtraBold';
+    src: url('Panton-ExtraBold.woff2') format('woff2'),
+        url('Panton-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-AFillLight';
+    src: url('PantonIcons-AFillLight.woff2') format('woff2'),
+        url('PantonIcons-AFillLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-Regular';
+    src: url('Panton-Regular.woff2') format('woff2'),
+        url('Panton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-Thin';
+    src: url('Panton-Thin.woff2') format('woff2'),
+        url('Panton-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-Bold';
+    src: url('Panton-Bold.woff2') format('woff2'),
+        url('Panton-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-BRegular';
+    src: url('PantonIcons-BRegular.woff2') format('woff2'),
+        url('PantonIcons-BRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-HeavyItalic';
+    src: url('Panton-HeavyItalic.woff2') format('woff2'),
+        url('Panton-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton-Black';
+    src: url('Panton-Black.woff2') format('woff2'),
+        url('Panton-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-Light';
+    src: url('Panton-Light.woff2') format('woff2'),
+        url('Panton-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-BLight';
+    src: url('PantonIcons-BLight.woff2') format('woff2'),
+        url('PantonIcons-BLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-ExtraBoldItalic';
+    src: url('Panton-ExtraBoldItalic.woff2') format('woff2'),
+        url('Panton-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton-ExtraLight';
+    src: url('Panton-ExtraLight.woff2') format('woff2'),
+        url('Panton-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton-ThinItalic';
+    src: url('Panton-ThinItalic.woff2') format('woff2'),
+        url('Panton-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Panton-SemiBold';
+    src: url('Panton-SemiBold.woff2') format('woff2'),
+        url('Panton-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PantonIcons-ALight';
+    src: url('PantonIcons-ALight.woff2') format('woff2'),
+        url('PantonIcons-ALight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
