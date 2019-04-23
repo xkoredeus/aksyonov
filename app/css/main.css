@@ -611,10 +611,10 @@ textarea:active {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -340px; }
+    margin-top: -430px; }
     .quick-info__subjects-item {
-      width: 375px;
-      height: 315px;
+      width: 295px;
+      height: 400px;
       background-position: 50% 50%;
       background-repeat: no-repeat;
       -webkit-background-size: contain;
@@ -690,9 +690,10 @@ textarea:active {
   background: url("../img/videos__bg.jpg") fixed no-repeat 50% 50%/cover;
   overflow: hidden; }
   .videos .section__subttl {
+    font-family: 'Panton-BoldItalic';
+    font-size: 16px;
     margin-bottom: -20px;
     text-align: center;
-    font-size: 16px;
     margin-bottom: 30px; }
   .videos .tabs__list {
     display: -webkit-box;
@@ -926,7 +927,10 @@ textarea:active {
       height: 424px; }
     .quick-info__subjects {
       margin-top: -40px;
-      max-height: 250px; }
+      max-height: 250px;
+      -webkit-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+              transform: translateY(0px); }
       .quick-info__subjects-item {
         width: 50%;
         height: 275px; }

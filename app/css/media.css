@@ -87,7 +87,10 @@
       height: 424px; }
     .quick-info__subjects {
       margin-top: -40px;
-      max-height: 250px; }
+      max-height: 250px;
+      -webkit-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+              transform: translateY(0px); }
       .quick-info__subjects-item {
         width: 50%;
         height: 275px; }
