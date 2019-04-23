@@ -10,8 +10,216 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-	<div id="popup_call" class="popup__container" style="display:none">
+	<header class="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-xl-1 d-none d-xl-block">
+					<img src="img/icon__logo.svg" alt="icon__logo.svg" class="banner__logo">
+				</div>
+				<div class="col-xl-7 nav__wrp">
+					<div class="nav">
+						<div class="nav__logo"><img src="img/icon__logo.svg" alt="icon__logo.svg" class="banner__logo"></div>
+						<a href="#about" class="nav__link"><span>Обо мне</span></a>
+						<a href="#gallery" class="nav__link"><span>Фото</span></a>
+						<a href="#videos" class="nav__link"><span>Видео</span></a>
+						<a href="#reviews" class="nav__link"><span>Отзывы</span></a>
+						<a href="#contacts" class="nav__link"><span>Контакты</span></a>
+					</div>
+				</div>
+				<div class="col-xl-2 col-2">
+					<div class="header__soc d-flex justify-content-start justify-content-xl-center">
+						<a href="#" class="header__soc-link"><img src="img/icon__vk.svg" alt="icon__vk.svg"></a>
+						<a href="#" class="header__soc-link"><img src="img/icon__in.svg" alt="icon__in.svg"></a>
+						<a href="#" class="header__soc-link"><img src="img/icon__fb.svg" alt="icon__fb.svg"></a>
+					</div>
+				</div>
+				<div class="col-xl-2 col-8 d-flex justify-content-center justify-content-xl-end">
+					<a href="tel:89993957776" class="header__tel">+7 999 395 777 6</a>
+				</div>
+				<div class="d-flex d-xl-none col-2 justify-content-end">
+					<div class="header__hamburger"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="banner">
+		<div class="container">
+			<div class="offer">
+				<div class="offer__info">
+					<h4 class="offer__subttl">Ведущий вашего <br> настроения</h4>
+					<h3 class="offer__ttl">Вадим Аксёнов</h3>
+				</div>
+				<div class="offer__img"></div>
+			</div>
+		</div>
+	</div>
+	<section class="quick-info">
+		<div class="container">
+			<a href="img/ipad.png" data-fancybox class="quick-info__img"></a>
+		</div>
+		<div class="quick-info__subjects">
+			<div class="quick-info__subjects-item quick-info__subjects-item_glass"></div>
+			<div class="quick-info__subjects-item quick-info__subjects-item_cup"></div>
+		</div>
+	</section>
+	<section class="section_inner intro-text" id="about">
+		<div class="container">
+			<h3 class="section__ttl">Дамы и господа!</h3>
+			<div class="intro-text__slider owl-carousel">
+				<div class="intro-text__item">
+					<p>Позвольте представиться, меня зовут Вадим Аксёнов, я - ведущий праздничных событий. С большим удовольствием помогу в организации и проведении Вашего свадебного торжества, юбилея, корпоративного праздника, презентации или же новогодней вечеринки.</p>
+					<p>Многолетний опыт работы в Event-индустрии и специальное профильное образование - СГСПУ факультет "Культуры и искусства" - дают возможность проводить разноплановые по своему формату и масштабу мероприятия.</p>
+				</div>
+				<div class="intro-text__item">
+					<p>Позвольте представиться, меня зовут Вадим Аксёнов, я - ведущий праздничных событий. С большим удовольствием помогу в организации и проведении Вашего свадебного торжества, юбилея, корпоративного праздника, презентации или же новогодней вечеринки.</p>
+					<p>Многолетний опыт работы в Event-индустрии и специальное профильное образование - СГСПУ факультет "Культуры и искусства" - дают возможность проводить разноплановые по своему формату и масштабу мероприятия.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner gallery" id="gallery">
+		<div class="container">
+			<h3 class="section__ttl">Фото</h3>
+			<div class="gallery__slider owl-carousel">
+				<a href="img/gallery__item-img_1.jpg" data-fancybox="gallery" class="gallery__slider-item" style="background-image: url('img/gallery__item-img_1.jpg')"></a>
+				<a href="img/gallery__item-img_2.jpg" data-fancybox="gallery" class="gallery__slider-item" style="background-image: url('img/gallery__item-img_2.jpg')"></a>
+				<a href="img/gallery__item-img_3.jpg" data-fancybox="gallery" class="gallery__slider-item" style="background-image: url('img/gallery__item-img_3.jpg')"></a>
+			</div>
+		</div>
+			
+	</section>
+	<section class="section_inner videos" id="videos">
+		<div class="container">
+			<h3 class="section__ttl">Видео</h3>
+			<h5 class="section__subttl">Чтобы лучше узнать меня, как ведущего, посмотрите ролики с моим участием.</h5>
+			<div class="videos__in row justify-content-between no-gutters">
+				<ul class="tabs__list col-xl-3 order-2">
+					<li class="active" style="background-image: url(img/gallery__item-img_1.jpg)"></li>
+					<li style="background-image: url(img/gallery__item-img_2.jpg)"></li>
+					<li style="background-image: url(img/gallery__item-img_3.jpg)"></li>
+				</ul>
+				<div class="tabs__container col-sm-9 order-1">
+					<div class="tabs__content-item active-tab">
+						<a href="img/gallery__item-img_1.jpg" style="background-image: url('img/gallery__item-img_1.jpg')" data-fancybox class="videos__item_big"></a>
+					</div>
+					<div class="tabs__content-item">
+						<a href="img/gallery__item-img_2.jpg" style="background-image: url('img/gallery__item-img_2.jpg')" data-fancybox class="videos__item_big"></a>
+					</div>
+					<div class="tabs__content-item">
+						<a href="img/gallery__item-img_3.jpg" style="background-image: url('img/gallery__item-img_3.jpg')" data-fancybox class="videos__item_big"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner rev" id="reviews">
+		<div class="container">
+			<h3 class="section__ttl">Отзывы</h3>
+			<div class="rev__slider owl-carousel">
+				<div class="rev__item">
+					<div class="row">
+						<div class="col-sm-3 mb-4 mb-sm-0">
+							<div class="rev__item-img" style="background-image: url('img/rev__item-img_1.jpg')"></div>
+						</div>
+						<div class="col-sm-9 rev__item-descr">
+							<p>Наша компания «Светсервис» приглашала ведущего Вадима Аксенова вести новогодний корпоративный праздник 3 года. Сотрудники компании остались очень довольны работой Вадима, как ведущего. Он умеет создавать атмосферу праздника и куража, ведет зажигательно, весело, легко.</p>
+							<p>Я думаю, что лучшая оценка – это то, что мы в течение трех лет доверяем Вадиму проводить наше главное мероприятие в компании.</p>
+							<p>Директор по персоналу компании «Светсервис» Седова Светлана</p>
+						</div>
+					</div>
+				</div>
+				<div class="rev__item">
+					<div class="row">
+						<div class="col-sm-3 mb-4 mb-sm-0">
+							<div class="rev__item-img" style="background-image: url('img/rev__item-img_1.jpg')"></div>
+						</div>
+						<div class="col-sm-9 rev__item-descr">
+							<p>Наша компания «Светсервис» приглашала ведущего Вадима Аксенова вести новогодний корпоративный праздник 3 года. Сотрудники компании остались очень довольны работой Вадима, как ведущего. Он умеет создавать атмосферу праздника и куража, ведет зажигательно, весело, легко.</p>
+							<p>Я думаю, что лучшая оценка – это то, что мы в течение трех лет доверяем Вадиму проводить наше главное мероприятие в компании.</p>
+							<p>Директор по персоналу компании «Светсервис» Седова Светлана</p>
+						</div>
+					</div>
+				</div>
+				<div class="rev__item">
+					<div class="row">
+						<div class="col-sm-3 mb-4 mb-sm-0">
+							<div class="rev__item-img" style="background-image: url('img/rev__item-img_1.jpg')"></div>
+						</div>
+						<div class="col-sm-9 rev__item-descr">
+							<p>Наша компания «Светсервис» приглашала ведущего Вадима Аксенова вести новогодний корпоративный праздник 3 года. Сотрудники компании остались очень довольны работой Вадима, как ведущего. Он умеет создавать атмосферу праздника и куража, ведет зажигательно, весело, легко.</p>
+							<p>Я думаю, что лучшая оценка – это то, что мы в течение трех лет доверяем Вадиму проводить наше главное мероприятие в компании.</p>
+							<p>Директор по персоналу компании «Светсервис» Седова Светлана</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner contacts" id="contacts">
+		<div class="container">
+			<h3 class="section__ttl">Контакты</h3>
+			<div class="row">
+				<div class="col-xl-6 d-flex flex-column contacts__left">
+					<a href="tel:89993957776" class="contacts__tel">+7 999 395 777 6</a>
+					<img src="img/contacts__img.png" alt="contacts__img.png" class="contacts__img">
+				</div>
+				<div class="col-xl-6">
+					<p>Если Вы укажете дату и повод мероприятия и напишете всё, что сочтёте необходимым, то наша с Вами встреча будет конструктивной и плодотворной, где я смогу лучше понять все Ваши желания.</p>
+					<p class="mb-3">Желания, воплощенные в реальность...</p>
+					<div class="contacts-form mt-5">
+						<form action="[[~[[*id]]]]" method="POST" class="contacts__form-in">
+							<div class="contacts-form__top row">
+								<div class="col-sm-6 mb-4">
+									<input type="text" placeholder="Как к Вам обращаться?*" class="contacts-form__input" name="contacts-form__name" required="">
+								</div>
+								<div class="col-sm-6 mb-4">
+									<input type="tel" placeholder="Ваш телефон*" class="contacts-form__input" name="contacts-form__tel" required="">
+								</div>
+								<div class="col-sm-6 mb-4">
+									<input type="email" placeholder="Ваш email*" class="contacts-form__input" name="contacts-form__email" required="">
+								</div>
+								<div class="col-sm-6 mb-4">
+									<input type="text" placeholder="Ваше сообщение*" class="contacts-form__input" name="contacts-form__text" required="">
+								</div>
+							</div>
+							<div class="contacts-form__bot row align-items-center mt-3 mb-5">
+								<div class="col-sm-6 contacts-form__policy mb-4 mb-sm-0">Отправляя форму, вы соглашаетесь с <a href="#" class="und">политикой конфиденциальности</a></div>
+								<div class="col-sm-6">
+									<input type="submit" class="btn" value="Отправить">
+								</div>
+							</div>
+						</form>
+						<div class="contacts-form__info d-flex justify-content-between align-items-center mb-5">
+							<div class="d-flex">
+								<a href="#" class="contacts-form__info-item mr-3">
+									<img src="img/icon__vk.svg" alt="icon__vk.svg">
+								</a>
+								<a href="#" class="contacts-form__info-item mr-3">
+									<img src="img/icon__in.svg" alt="icon__in.svg">
+								</a>
+								<a href="#" class="contacts-form__info-item">
+									<img src="img/icon__fb.svg" alt="icon__fb.svg">
+								</a>
+							</div>
+							<a href="tel:8939753606" class="contacts-form__info-item">
+								<img src="img/icon__wa.svg" alt="icon__wa.svg" class="mr-2">
+								<span class="und">+7 939 753 60 60</span>
+							</a>
+							<a href="mailto:axenoovv@mail.ru" class="contacts-form__info-item">
+								<img src="img/icon__mail.svg" alt="icon__mail.svg" class="mr-2">
+								<span class="und">axenoovv@mail.ru</span>
+							</a>
+						</div>
+						<a href="https://akticom.ru/" target="blank" class="contacts-form__akticom mt-3 d-flex justify-content-center align-items-center d-xl-block">
+							<img src="img/icon__ak.png" alt="icon__ak.png" class="mr-2">
+							<span class="und">Сделано с любовью, Актиком</span>
+						</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <div id="popup_call" class="popup__container" style="display:none">
 		<div  class="popup__wrp popup_call__wrp">
 			<form action="[[~[[*id]]]]" method="post" class="popup">
 				<h3 class="popup__ttl">Оставьте заявку</h3>
@@ -30,7 +238,7 @@
 				</div>
 			</form>
 		</div>
-	</div>
+	</div> -->
 	<script src="js/libs.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>

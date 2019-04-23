@@ -1,25 +1,156 @@
-@media screen and (max-width: 1070px)
-	.main-slider__item
-		background-position-x: 20%
-	.main-slider__container
-		padding-right: 30px
-		padding-left: 30px
-	.main-slider .owl-carousel .owl-nav button.owl-prev
+@media screen and (max-width: 1200px)
+	body
+		overflow-x: hidden
+	.header
+		padding: 25px 0
+		&.sticky
+			padding: 25px 0
+		.nav
+			flex-direction: column
+			align-items: center
+			&__logo
+				display: block
+				margin-bottom: 60px
+			&__wrp
+				position: fixed
+				width: 120%
+				height: 100%
+				top: 0
+				left: 50%
+				margin-left: -60%
+				visibility: hidden
+				opacity: 0
+				background: url(../img/banner__bg.jpg) no-repeat 50% 50%
+				z-index: 3
+				display: flex
+				flex-direction: column
+				justify-content: center
+				&.active
+					visibility: visible
+					opacity: 1
+			&__link
+				width: calc(100% / 2)
+
+	.contacts
+		&__left
+			min-height: 530px
+		&__tel
+			text-align: center
+		&__img
+			max-height: 490px
+			top: 50px
+			right: 50%
+			margin-right: -540px
+@media screen and (max-width: 993px)
+	.banner
+		height: 700px
+		.offer
+			flex-direction: column
+			align-items: center
+			text-align: center
+			padding-top: 90px
+		.offer__img
+			margin-right: 0
+		.offer__subttl
+			font-size: 23px
+		.offer__ttl
+			font-size: 34px
+	.quick-info
+		margin-top: 690px
+		&__img
+			height: 424px
+		&__subjects
+			margin-top: -40px
+			max-height: 250px
+			&-item
+				width: 50%
+				height: 275px
+	.rev .owl-carousel .owl-nav button.owl-prev
 		left: 0
-	.main-slider .owl-carousel .owl-nav button.owl-next
+	.rev .owl-carousel .owl-nav button.owl-next
 		right: 0
 @media screen and (max-width: 768px)
-	.section__ttl,
-	.main-slider__ttl
+	.section__ttl
 		font-size: 25px
 @media screen and (max-width: 576px)
-	.news__item-wrp
-		max-width: 320px
+	.quick-info__img
+		height: 284px
+	.intro-text__item.short
+		height: 200px
+		overflow-y: hidden
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			bottom: 0
+			left: 0
+			box-shadow: inset 0px -52px 35px 0px #fff
+	.gallery__slider-item
+		height: 295px
+		max-width: 85%
 		margin-left: auto
 		margin-right: auto
-	.main-slider .owl-carousel .owl-nav button.owl-prev
+	.rev__item
+		max-width: 85%
+		margin-left: auto
+		margin-right: auto
+		&-descr
+			height: auto
+			&.short
+				height: 200px
+				overflow-y: hidden
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 100%
+					bottom: 0
+					left: 0
+					box-shadow: inset 0px -52px 35px 0px #fae4d1bd
+		&-img
+			margin-left: auto
+			margin-right: auto
+		p
+			text-align: center
+	.gallery .owl-carousel .owl-nav button.owl-prev,
+	.rev .owl-carousel .owl-nav button.owl-prev
 		left: -9px
 		transform: scale(.7)
-	.main-slider .owl-carousel .owl-nav button.owl-next
+	.gallery .owl-carousel .owl-nav button.owl-next,
+	.rev .owl-carousel .owl-nav button.owl-next
 		right: -9px
 		transform: scale(.7)
+	.videos .tabs__list
+		display: none
+	.videos .tabs__content-item
+		display: block !important
+		height: 320px
+		margin-bottom: 15px
+	.contacts
+		.contacts-form__policy
+			text-align: center
+		.btn
+			margin-left: auto
+			margin-right: auto
+		&-form__info
+			a
+				opacity: 1
+			&-item
+				&:nth-child(2)
+					span
+						display: none
+@media screen and (max-width: 360px)
+	.banner .offer
+		padding-top: 110px
+	.header__soc
+		flex-direction: column
+		align-items: center
+		&-link:not(:last-child)
+			margin-bottom: 5px
+			margin-right: 0
+	.header__hamburger::before,
+	.header__hamburger::after
+		width: 100%

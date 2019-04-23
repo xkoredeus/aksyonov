@@ -167,7 +167,7 @@
 }
 
 @font-face {
-    font-family: 'PantonIcons-AFillRegula';
+    font-family: 'PantonIcons-AFillRegular';
     src: url('PantonIcons-AFillRegular.woff2') format('woff2'),
         url('PantonIcons-AFillRegular.woff') format('woff');
     font-weight: normal;

@@ -3,7 +3,7 @@
 body
 	scroll-behavior: smooth
 	background-color: #fff
-	font-family: 'Museo300'
+	font-family: 'Panton-RegularItalic'
 	color: #2D2A2B
 	font-size: 14px
 	line-height: 1.4
@@ -14,11 +14,11 @@ body
 *:before
 	transition: .3s all ease
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, div::selection, img::selection, mark::selection, ul::selection, li::selection
-	color            : #2D2A2B
-	background-color : #FFCB05
+	color            : #fff
+	background-color : #423943
 ::selection
 	color            : #2D2A2B
-	background-color : #FFCB05
+	background-color : #423943
 a, a:hover, a:active, a:focus,
 button, input, button:hover, button:active, button:focus,
 input:focus, input:active, .btn, .btn:after, select:focus, select:active
@@ -27,39 +27,43 @@ input:focus, input:active, .btn, .btn:after, select:focus, select:active
 	transition: all 0.4s ease
 	cursor: pointer
 a
-	color: #00BFF3
+	color: #fff
+	&:hover
+		color: #fff
+		opacity: .6
 button
 	border: transparent
 	background: none
 option
-	color: #2D2A2B
+	color: #fff
 textarea
 	resize:none
 input,
 textarea,
 select
-	color: #2D2A2B
-	font-family: 'Museo500'
+	color: #fff
+	font-family: 'AvenirNextCyr-Regular';
 	font-size: 14px
-	padding: 8px 30px
+	padding: 8px 15px
 	background: none
+	opacity: .7
 input,
 select
 	border: none
-	border-bottom: 1px solid #000
+	border-bottom: 1px solid #fff
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="tel"]::placeholder
-	color: #2D2A2B
+	color: #fff
 input:focus,
 textarea:focus,
 input:active,
 textarea:active
 	background: none
-	color: #2D2A2B
-	border-bottom: 1px solid #FFCB05
-	border-color: #39B563
+	color: #fff
+	border-bottom: 1px solid #fff
 	outline: none
+	opacity: 1
 .shd
 	box-shadow: 0px 12px 28px -13px rgba(0,0,0,0.64)
 	&:hover
@@ -67,17 +71,18 @@ textarea:active
 .btn
 	outline: none
 	font-size: 14px
-	font-family: 'Museo700'
+	font-family: 'AvenirNextCyr-Bold';
 	text-transform: uppercase
 	text-align: center
 	padding: 15px 30px
-	color: #000
-	background-color: #FFCB05
+	color: #fff
+	background-color: transparent
+	border: 1px solid #fff
+	border-radius: 6px
 	position: relative
 	display: block
 	max-width: 320px
-	&:hover
-		animation: brr linear 5s infinite
+	opacity: 1
 	&:hover
 		color: #fff
 		opacity: .8
@@ -155,7 +160,7 @@ textarea:active
 			background: -moz-linear-gradient(-45deg, rgba(255,203,5,1) 0%, rgba(80,184,72,1) 32%, rgba(0,191,243,1) 70%, rgba(238,51,123,1) 100%)
 			background: -webkit-linear-gradient(-45deg, rgba(255,203,5,1) 0%,rgba(80,184,72,1) 32%,rgba(0,191,243,1) 70%,rgba(238,51,123,1) 100%)
 			background: linear-gradient(135deg, rgba(255,203,5,1) 0%,rgba(80,184,72,1) 32%,rgba(0,191,243,1) 70%,rgba(238,51,123,1) 100%)
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ee337b',GradientType=1 )
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423943', endColorstr='#ee337b',GradientType=1 )
 			opacity: .7
 	.popup_call__wrp
 		max-width: 320px
@@ -212,37 +217,38 @@ textarea:active
 		button.owl-dot
 			width: 15px
 			height: 15px
-			border: 1px solid #333
+			border: 1px solid #000
 			background-color: transparent
 			position: relative
 			transform: scale(1)
+			border-radius: 50%
 			&:not(:last-child)
 				margin-right: 13px
 			&.active
 				transform: scale(0.9)
 				border-color: transparent
-				background-color: #FFCB05
+				background-color: #000
 	.owl-nav
 		button.owl-prev,
 		button.owl-next
 			position: absolute
 			bottom: 50%
+			width: 50px
+			height: 50px
 			margin-bottom: -25.5px
-			border: 1px solid #000
-			padding: 10px !important
+			border-radius: 50%
+			background-color: #4E3F50
+			cursor: pointer
 		button.owl-prev:hover,
 		button.owl-next:hover
 			background-color: #fff
-			border-color: #fff
 		button.owl-prev.disabled,
 		button.owl-next.disabled,
 		button.owl-prev.disabled:hover,
 		button.owl-next.disabled:hover
 			opacity: .4
 			background-color: transparent
-			border-color: #000
 			cursor: default
-			
 		button.owl-prev
 			left: 0
 		button.owl-next
@@ -251,10 +257,9 @@ textarea:active
 	padding: 60px 0
 .section__ttl
 	font-size: 40px
-	color: #2D2A2B
-	font-family: 'Museo900'
+	font-family: 'Panton-SemiBold';
 	letter-spacing: 2px
-	margin-bottom: 45px
+	margin-bottom: 30px
 	text-align: center
 	text-transform: uppercase
 .input__wrp
@@ -284,4 +289,375 @@ textarea:active
 		top: 8px
 	&:not(:last-child)
 		margin-bottom: 15px
+.header
+	padding: 10px 0
+	position: fixed
+	z-index: 2
+	left: 0
+	top: 0
+	width: 100%
+	transition: .6s all ease
+	&.sticky
+		padding: 0
+		background: url('../img/nav__bg.jpg') no-repeat 50% 50% / cover
+	.nav
+		display: flex
+		justify-content: space-around
+		align-items: center
+		&__logo
+			display: none
+		&__link
+			font-family: 'AvenirNextCyr-Regular'
+			text-transform: uppercase
+			display: flex
+			width: calc(100% / 5)
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0px
+				bottom: 0px
+				left: 0px
+				right: 0px
+				background: linear-gradient(to bottom, #d0b2c200 0%, #fbf8f8 33%, #fbf8f8 61%, #d0b2c200 100%)
+				opacity: 0
+				transition: .5s all ease
+			span
+				position: relative
+				width: 100%
+				text-align: center
+				padding: 25px 5px
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					width: 2px
+					height: 20px
+					top: 50%
+					margin-top: -10px
+					bottom: 0px
+					background-color: #4f4747
+				&::before
+					left: -1px
+				&::after
+					right: -1px
+			&:hover,
+			&.here
+				opacity: 1
+				&::before
+					opacity: .1
+				span
+					opacity: 1
+					font-family: 'AvenirNextCyr-Bold'
+					&::before,
+					&::after
+						height: 60px
+						margin-top: -30px
+	&__soc
+		&-link
+			display: block
+			&:not(:last-child)
+				margin-right: 12px
+	&__tel
+		font-size: 16px
+		font-family: 'AvenirNextCyr-Bold'
+	&__hamburger
+		position: relative
+		width: 32px
+		height: 2px
+		border-radius: 5px
+		background-color: #fff
+		opacity: 1
+		z-index: 6
+		transition: all 0.5s ease
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			width: 32px
+			height: 2px
+			background-color: #fff
+			border-radius: 35px
+			left: 0
+		&::before
+			top: -14px
+		&::after
+			bottom: -14px
+		&.active
+			background-color: transparent
+			z-index: 6
+			width: 32px
+			height: 10px
+			&::before
+				width: 39px
+				top: 1.5px
+				transform: rotate(315deg)
+				background-color: #fff
+			&::after
+				width: 39px
+				bottom: 7px
+				transform: rotate(45deg)
+				background-color: #fff
+.banner
+	height: 563px
+	width: 100%
+	position: fixed
+	left: 0
+	top: 0
+	background: url('../img/banner__bg.jpg') no-repeat 50% 50% / cover
+	.offer
+		color: #fff
+		padding: 90px 0 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__subttl
+			font-size: 32px
+			margin-bottom: 20px
+		&__ttl
+			font-size: 45px
+			font-family: 'Panton-Bold';
+			text-transform: uppercase
+		&__img
+			width: 272px
+			height: 444px
+			background: url('../img/banner__img.png') no-repeat 50% 50% / contain
+			margin-right: 210px
+.quick-info
+	background-color: #fff
+	position: relative
+	margin-top: 563px
+	background: url('../img/videos__bg.jpg') fixed no-repeat 50% 50% / cover
+	&__img
+		width: 100%
+		max-width: 770px
+		height: 544px
+		display: block
+		transform: translateY(-40px)
+		margin-left: auto
+		margin-right: auto
+		background: url('../img/ipad.png') no-repeat 50% 50% / contain
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 100px
+			height: 100px
+			left: 50%
+			margin-left: -50px
+			top: 50%
+			margin-top: -50px
+			background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
+		&:hover
+			opacity: 1
+			transform: translateY(-35px)
+			&::before
+				transform: scale(1.2)
+				
+	&__subjects
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: -440px
+		&-item
+			width: 465px
+			height: 395px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: contain
+			&_glass
+				background-image: url('../img/glasses.png')
+			&_cup
+				background-image: url('../img/cup.png')
+.intro-text
+	color: #000
+	background-color: #fff
+	position: relative
+	padding-bottom: 100px
+	&__item
+		font-family: 'Panton-BoldItalic'
+		text-align: center
+		font-size: 16px
+		p
+			margin-bottom: 0
+	.owl-carousel
+		.owl-dots
+			bottom: -40px
+.gallery
+	color: #fff
+	position: relative
+	background: url('../img/gallery__bg.jpg') fixed no-repeat 50% 50% / cover
+	overflow: hidden
+	&__slider
+		.owl-stage-outer
+			overflow: visible
+		&-item
+			max-width: 970px
+			width: 100%
+			height: 445px
+			margin-left: auto
+			margin-right: auto
+			display: block
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-color: #4E3F50
+				opacity: .5
+			&:hover
+				opacity: 1
+				transform: scale(1.02)
+		.owl-item.center
+			.gallery__slider-item
+				&::before
+					opacity: .0
+.tabs__list
+	list-style-type: none
+	margin: 0
+	padding: 0
+.tabs__content-item
+	transition: unset
+.videos
+	color: #000
+	position: relative
+	background: url('../img/videos__bg.jpg') fixed no-repeat 50% 50% / cover
+	overflow: hidden
+	.section__subttl
+		margin-bottom: -20px
+		text-align: center
+		font-size: 16px
+		margin-bottom: 30px
+	.tabs__list
+		display: flex
+		flex-direction: column
+		flex: 0 0 24%
+		max-width: 24%
+		li
+			width: 100%
+			height: 150px
+			display: block
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-color: #4E3F50
+				opacity: .7
+			&:not(:last-child)
+				margin-bottom: 15px
+			&.active
+				&::before
+					opacity: 0
+			&:not(.active):hover
+				transform: scale(.97)
+	.tabs__content-item
+		height: 100%
+		max-height: 480px
+	&__item
+		&_big
+			width: 100%
+			height: 100%
+			display: block
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 100px
+				height: 100px
+				left: 50%
+				margin-left: -50px
+				top: 50%
+				margin-top: -50px
+				background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
+			&:hover
+				opacity: 1
+				&::before
+					transform: scale(1.2)
+.rev
+	color: #000
+	position: relative
+	background: url('../img/rev__bg.jpg') fixed no-repeat 50% 50% / cover
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: #fff
+		opacity: .8
+	.container
+		position: relative
+	&__slider
+		max-width: 970px
+		margin-left: auto
+		margin-right: auto
+	&__item
+		&-img
+			width: 100%
+			max-width: 270px
+			height: 200px
+			margin-left: 1px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+		p
+			font-family: 'Panton-BoldItalic'
+			font-size: 16px
+	.owl-carousel .owl-nav button.owl-prev
+		left: -70px
+	.owl-carousel .owl-nav button.owl-next
+		right: -70px
+.contacts
+	color: #fff
+	position: relative
+	background: url('../img/contacts__bg.jpg') fixed no-repeat 50% 50% / cover
+	&__tel
+		font-family: 'Panton-Bold'
+		font-size: 26px
+		text-align: right
+		position: relative
+	&__img
+		position: absolute
+		right: -340px
+		max-height: 560px
+	&__form
+	p
+		font-size: 18px
+		font-family: 'Panton-SemiBoldItalic'
+	.btn
+		width: 100%
+	.contacts-form
+		&__input
+			width: 100%
+		&__policy
+			font-family: 'Panton-LightItalic'
+		&__info
+			&-item
+				font-family: 'Panton-Light'
+				opacity: .5
+				&:hover
+					opacity: 1
+				img
+					max-height: 26px
+		&__akticom
+			font-family: 'Panton-Light'
 @import "media"
