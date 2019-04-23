@@ -257,7 +257,7 @@ textarea:active
 	padding: 60px 0
 .section__ttl
 	font-size: 40px
-	font-family: 'Panton-SemiBold';
+	font-family: 'Panton-Bold';
 	letter-spacing: 2px
 	margin-bottom: 30px
 	text-align: center
@@ -299,11 +299,25 @@ textarea:active
 	transition: .6s all ease
 	&.sticky
 		padding: 0
-		background: url('../img/nav__bg.jpg') no-repeat 50% 50% / cover
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			opacity: .7
+			background: url('../img/nav__bg.jpg') no-repeat 50% 50% / cover
+		.nav__link
+			span
+				&::before,
+				&::after
+					opacity: .7
 	.nav
 		display: flex
 		justify-content: space-around
 		align-items: center
+		position: relative
 		&__logo
 			display: none
 		&__link
@@ -463,7 +477,9 @@ textarea:active
 		justify-content: space-between
 		align-items: center
 		margin-top: -430px
-		// transform: translateY(-80px)
+		max-width: 1600px
+		margin-left: auto
+		margin-right: auto
 		&-item
 			width: 295px
 			height: 400px
@@ -535,7 +551,7 @@ textarea:active
 	background: url('../img/videos__bg.jpg') fixed no-repeat 50% 50% / cover
 	overflow: hidden
 	.section__subttl
-		font-family: 'Panton-BoldItalic'
+		font-family: 'Panton-ExtraBoldItalic'
 		font-size: 16px
 		margin-bottom: -20px
 		text-align: center
@@ -610,8 +626,8 @@ textarea:active
 		height: 100%
 		left: 0
 		top: 0
-		background-color: #fff
-		opacity: .8
+		background-color: #fae8cc
+		opacity: 0.9
 	.container
 		position: relative
 	&__slider
@@ -628,7 +644,7 @@ textarea:active
 			background-repeat: no-repeat
 			background-size: cover
 		p
-			font-family: 'Panton-BoldItalic'
+			font-family: 'Panton-ExtraBoldItalic'
 			font-size: 16px
 	.owl-carousel .owl-nav button.owl-prev
 		left: -70px
@@ -638,6 +654,7 @@ textarea:active
 	color: #fff
 	position: relative
 	background: url('../img/contacts__bg.jpg') fixed no-repeat 50% 50% / cover
+	overflow: hidden
 	&__tel
 		font-family: 'Panton-Bold'
 		font-size: 26px
