@@ -547,6 +547,8 @@ textarea:active {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .banner .offer__info {
+      margin-left: 100px; }
     .banner .offer__subttl {
       font-size: 32px;
       margin-bottom: 20px; }
@@ -609,10 +611,10 @@ textarea:active {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -440px; }
+    margin-top: -340px; }
     .quick-info__subjects-item {
-      width: 465px;
-      height: 395px;
+      width: 375px;
+      height: 315px;
       background-position: 50% 50%;
       background-repeat: no-repeat;
       -webkit-background-size: contain;
@@ -646,7 +648,7 @@ textarea:active {
   .gallery__slider-item {
     max-width: 970px;
     width: 100%;
-    height: 445px;
+    height: 590px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -711,11 +713,14 @@ textarea:active {
       width: 100%;
       height: 150px;
       display: block;
+      -webkit-border-radius: 6px;
+              border-radius: 6px;
       background-position: 50% 50%;
       background-repeat: no-repeat;
       -webkit-background-size: cover;
               background-size: cover;
-      position: relative; }
+      position: relative;
+      overflow: hidden; }
       .videos .tabs__list li::before {
         content: '';
         position: absolute;
@@ -739,6 +744,8 @@ textarea:active {
   .videos__item_big {
     width: 100%;
     height: 100%;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
     display: block;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -905,12 +912,14 @@ textarea:active {
               align-items: center;
       text-align: center;
       padding-top: 90px; }
-    .banner .offer__img {
-      margin-right: 0; }
-    .banner .offer__subttl {
-      font-size: 23px; }
-    .banner .offer__ttl {
-      font-size: 34px; }
+      .banner .offer__info {
+        margin-left: 0; }
+      .banner .offer__img {
+        margin-right: 0; }
+      .banner .offer__subttl {
+        font-size: 23px; }
+      .banner .offer__ttl {
+        font-size: 34px; }
   .quick-info {
     margin-top: 690px; }
     .quick-info__img {

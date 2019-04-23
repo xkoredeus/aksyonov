@@ -73,12 +73,14 @@
               align-items: center;
       text-align: center;
       padding-top: 90px; }
-    .banner .offer__img {
-      margin-right: 0; }
-    .banner .offer__subttl {
-      font-size: 23px; }
-    .banner .offer__ttl {
-      font-size: 34px; }
+      .banner .offer__info {
+        margin-left: 0; }
+      .banner .offer__img {
+        margin-right: 0; }
+      .banner .offer__subttl {
+        font-size: 23px; }
+      .banner .offer__ttl {
+        font-size: 34px; }
   .quick-info {
     margin-top: 690px; }
     .quick-info__img {
