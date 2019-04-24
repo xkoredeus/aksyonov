@@ -816,6 +816,12 @@ textarea:active {
   .rev__item p {
     font-family: 'Panton-ExtraBoldItalic';
     font-size: 16px; }
+  .rev .owl-carousel .owl-nav button.owl-prev,
+  .rev .owl-carousel .owl-nav button.owl-next {
+    background-color: #fff; }
+  .rev .owl-carousel .owl-nav button.owl-prev:hover,
+  .rev .owl-carousel .owl-nav button.owl-next:hover {
+    background-color: #4E3F50; }
   .rev .owl-carousel .owl-nav button.owl-prev {
     left: -70px; }
   .rev .owl-carousel .owl-nav button.owl-next {
