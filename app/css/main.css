@@ -660,7 +660,6 @@ textarea:active {
   .gallery__slider .owl-stage-outer {
     overflow: visible; }
   .gallery__slider-item {
-    max-width: 970px;
     width: 100%;
     height: 590px;
     margin-left: auto;
@@ -685,8 +684,10 @@ textarea:active {
       -webkit-transform: scale(1.02);
           -ms-transform: scale(1.02);
               transform: scale(1.02); }
-  .gallery__slider .owl-item.center .gallery__slider-item::before {
-    opacity: .0; }
+  .gallery__slider .owl-item.center .gallery__slider-item {
+    max-width: 970px; }
+    .gallery__slider .owl-item.center .gallery__slider-item::before {
+      opacity: .0; }
 
 .tabs__list {
   list-style-type: none;
